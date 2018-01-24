@@ -10,6 +10,7 @@ const getChannels = slackEntities.getChannels
 const getUsers = slackEntities.getUsers
 const getGroups = slackEntities.getGroups
 const getFiles = slackEntities.getFiles
+const getLinks = slackEntities.getLinks
 
 getChannels('hey <@USLACKBOT> check out <#C0000000>')
 // [{
@@ -30,5 +31,10 @@ getFiles('check out <https://austinprivatelibrary.slack.com/files/flip/F00000000
 // [{
 //   tag: '<https://austinprivatelibrary.slack.com/files/flip/F00000000/README.md>',
 //   id: 'https://austinprivatelibrary.slack.com/files/flip/F00000000/README.md',
+// }]
+getLinks('Have this query string <https://www.google.com/?url=has-querystring> is quite nice.')
+// [{
+//   tag: '<https://www.google.com/?url=has-querystring>',
+//     id: 'https://www.google.com/?url=has-querystring' 
 // }]
 ```
