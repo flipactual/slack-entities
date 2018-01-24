@@ -1,5 +1,5 @@
 {
-  "name": "slack-entities",
+  "name": "slack-entities-enchanced",
   "version": "1.0.0",
   "description": "Methods for extracting entities like channels and users from Slack messages.",
   "main": "index.js",
